@@ -43,10 +43,10 @@
                         <table id="dataTable" class="table table-striped table-bordered" style="width:100%; text-align:center">
                         <thead>
                             <tr>
-                                <th class="text-center" style="width:8%">Si</th>
-                                <th class="text-center" style="width:20%">Name</th>
-                                <th class="text-center" style="width:50%">Permission</th>
-                                <th class="text-center" style="width:22%">Action</th>
+                                <th class="text-center" style="width:5%">Si</th>
+                                <th class="text-center" style="width:25%">Name</th>
+                                <th class="text-center" style="width:40%">Permission</th>
+                                <th class="text-center" style="width:30%">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -62,7 +62,7 @@
                                         @endforeach
                                     </td>
                                     <td>
-                                        <a class="btn btn-info text-wtite" href="">Edit</a>
+                                        <a class="btn btn-info text-wtite" href="" style="margin-right: 10px;">Edit</a>
                                         <a class="btn btn-danger text-wtite" href="">Delete</a>
                                     </td>
                                 </tr>

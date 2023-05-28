@@ -25,4 +25,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::prefix('admin')->group(function () {
     Route::get('/',[ DashboardController ::class,'index'])->name('admin.dashboard');
     Route::get('/roles',[ RolesController::class,'index'])->name('admin.roles');
+    Route::get('/roles/create',[ RolesController::class,'create'])->name('admin.roles.create');
+    Route::post('/roles/store',[ RolesController::class,'store'])->name('admin.roles.store');
 });

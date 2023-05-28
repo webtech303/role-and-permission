@@ -9,11 +9,22 @@ use Spatie\Permission\Models\Permission;
 
 class RolesController extends Controller
 {
-    public $roles;
+    public $role,$roles;
     public function index()
     {
         $this->roles = Role::all();
         return view('backend.pages.roles.index',
         ['roles'=>$this->roles]);
+    }
+    public function create()
+    {
+        $this->permissions = Permission::all();
+        return view('backend.pages.roles.create',
+            ['permissions'=>$this->permissions]);
+    }
+    public function store(Request $request)
+    {
+        $this->role = Role::create(['name' => $request->name]);
+        return back();
     }
 }

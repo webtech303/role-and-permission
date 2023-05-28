@@ -32,12 +32,11 @@
             <!-- page title area end -->
 
             <div class="main-content-inner">
-
-            <div class="row">
+                <div class="row">
                     <!-- data table start -->
                     <div class="col-md-12 mt-4">
                         <h3 style="padding-bottom: 10px;">Role List</h3>
-                        <a class="btn btn-primary text-wtite" href="{{ route('roles.create')}}">Create Role</a>
+                        <a class="btn btn-primary text-wtite" href="">Create Role</a>
                         <div class="clearfix"></div>
                     <div class="mt-4">
                     @include('backend.layouts.partials.messages')
@@ -63,13 +62,13 @@
                                         @endforeach
                                     </td>
                                     <td>
-                                        <a class="btn btn-info text-wtite" href="{{route('roles.edit',['id'=>$role->id])}}">Edit</a>
-                                        <a class="btn btn-danger text-wtite" href="{{route('roles.destroy',['id'=>$role->id])}}">Delete</a>
+                                        <a class="btn btn-info text-wtite" href="">Edit</a>
+                                        <a class="btn btn-danger text-wtite" href="">Delete</a>
                                     </td>
                                 </tr>
                             @endforeach
                         </tbody>
-                        </table>    
+                        </table>
 </div>
                     </div>
                     <!-- data table end -->
